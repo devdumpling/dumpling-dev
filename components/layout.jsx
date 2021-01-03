@@ -10,7 +10,7 @@ export default function Layout({ preview, introDone, children }) {
         {preview && <Alert preview={preview} />}
         <main>{children}</main>
       </div>
-      {introDone && <Footer />}
+      <Footer />
     </>
   )
 }

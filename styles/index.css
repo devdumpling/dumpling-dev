@@ -2,52 +2,54 @@
 @tailwind base;
 @tailwind components;
 
-.cursor {
-  animation: 1s blink step-end infinite;
-}
-@keyframes blink {
-  from,
-  to {
-    color: transparent;
+@layer components {
+  .cursor {
+    animation: 1s blink step-end infinite;
   }
-  50% {
-    color: #999;
+  @keyframes blink {
+    from,
+    to {
+      color: transparent;
+    }
+    50% {
+      color: #999;
+    }
   }
-}
-@-moz-keyframes blink {
-  from,
-  to {
-    color: transparent;
+  @-moz-keyframes blink {
+    from,
+    to {
+      color: transparent;
+    }
+    50% {
+      color: #999;
+    }
   }
-  50% {
-    color: #999;
+  @-webkit-keyframes blink {
+    from,
+    to {
+      color: transparent;
+    }
+    50% {
+      color: #999;
+    }
   }
-}
-@-webkit-keyframes blink {
-  from,
-  to {
-    color: transparent;
+  @-ms-keyframes blink {
+    from,
+    to {
+      color: transparent;
+    }
+    50% {
+      color: #999;
+    }
   }
-  50% {
-    color: #999;
-  }
-}
-@-ms-keyframes blink {
-  from,
-  to {
-    color: transparent;
-  }
-  50% {
-    color: #999;
-  }
-}
-@-o-keyframes blink {
-  from,
-  to {
-    color: transparent;
-  }
-  50% {
-    color: #999;
+  @-o-keyframes blink {
+    from,
+    to {
+      color: transparent;
+    }
+    50% {
+      color: #999;
+    }
   }
 }
 

@@ -6,8 +6,8 @@ export default function IntroDemo({ setIntroDone }) {
   const [subtitle, setSubtitle] = useState(`Devon | Developer | Dad`);
   const [loadingSub, setLoadingSub] = useState(false);
   const [subClickCount, setSubClickCount] = useState(0);
-  const namePrefix = `<Dev />`;
-  const nameSuffix = `on Wells`;
+  const namePrefix = `<Dev`;
+  const nameSuffix = `on Wells />`;
 
   const handleSubtitleClick = () => {
     if (loadingSub) return;
@@ -23,7 +23,7 @@ export default function IntroDemo({ setIntroDone }) {
 
     let newSubtitle = subtitle;
     while (newSubtitle == subtitle) {
-      newSubtitle = `Dev | ${
+      newSubtitle = `Dev : ${
         TITLES[Math.floor(Math.random() * Math.floor(TITLES.length - 1))]
       }`;
     }
@@ -33,17 +33,17 @@ export default function IntroDemo({ setIntroDone }) {
   return (
     <>
       <div className="flex-col flex h-screen justify-center items-center m-auto">
-        <h1 className="text-center text-8xl tracking-tighter leading-tight">
+        <h1 className="text-center text-accent-5 font-bold md:text-8xl text-6xl tracking-tighter leading-tight">
           {namePrefix}
           <Typewriter
             srcString={nameSuffix}
-            styles={"text-gray-600"}
+            styles={"text-accent-6"}
             cursor={false}
           />
         </h1>
         <h1
           onClick={handleSubtitleClick}
-          className="text-center cursor-pointer text-purple-500 text-3xl tracking-tighter leading-tight"
+          className="text-center cursor-pointer text-accent-6 text-2xl md:text-3xl tracking-tighter leading-tight"
         >
           <Typewriter srcString={subtitle} setStillTyping={setLoadingSub} />
         </h1>

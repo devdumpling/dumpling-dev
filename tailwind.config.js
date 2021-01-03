@@ -1,11 +1,19 @@
 module.exports = {
   purge: ['./components/**/*.{js,ts,jsx,tsx}', './pages/**/*.{js,ts,jsx,tsx}'],
   theme: {
+    container: {
+      center: true,
+    },
     extend: {
       colors: {
         'accent-1': '#FAFAFA',
         'accent-2': '#EAEAEA',
-        'accent-7': '#333',
+        'accent-3': '#F8B195',
+        'accent-4': '#F67280',
+        'accent-5': '#C06C84',
+        'accent-6': '#6C5B7B',
+        'accent-7': '#355C7D',
+        'accent-8': '#333',
         success: '#0070f3',
         cyan: '#79FFE1',
       },
