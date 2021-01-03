@@ -2,7 +2,7 @@
 @tailwind base;
 @tailwind components;
 
-.cursor {
+/* .cursor {
   animation: 1s blink step-end infinite;
 }
 @keyframes blink {
@@ -49,7 +49,7 @@
   50% {
     color: #999;
   }
-}
+} */
 
 /* purgecss end ignore */
 @tailwind utilities;
