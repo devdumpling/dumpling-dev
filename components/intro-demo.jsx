@@ -33,7 +33,7 @@ export default function IntroDemo({ setIntroDone }) {
   return (
     <>
       <div className="flex-col flex h-screen justify-center items-center m-auto">
-        <h1 className="text-center text-accent-5 font-bold md:text-8xl text-6xl tracking-tighter leading-tight">
+        <h1 className="text-center text-accent-4 font-bold md:text-8xl text-6xl tracking-tighter leading-tight">
           {namePrefix}
           <Typewriter
             srcString={nameSuffix}
